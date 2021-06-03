@@ -1,6 +1,6 @@
 def read_file(filename):
     lines = []
-    with open(filename, 'r', encoding ='utf-8-sig') as f:
+    with open(filename, 'r', encoding ='utf-8-sig') as f: #出現 ufeff 加上"sig"
         for line in f:
             lines.append(line.strip())
     return lines
